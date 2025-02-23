@@ -13,38 +13,44 @@
     <div class="app">
     <header>
 
-    <form action="">
-        <input type="search" placeholder="Enter a city"required/>
-        <input type="submit" value="search" />
+    <form class="search-form " action="">
+        <input type="search" placeholder="Enter a city"required class="search-form-input"/>
+        <input type="submit" value="search" class="search-form-button" />
     </form>
     </header>
+    
     <main>
+    <div class="app-data">
         <div>
-            <h1>
+            <h1 class="app-city">
                 Khartoum 
             </h1>
-            <p>Thursday 4:53, scattered clouds </p> 
-            <p>humidity: 68%, wind: 3.13km/h</p>
+            <p class="app-details">Thursday 4:53, scattered clouds 
+            <br/>
+            humidity:<strong>68%</strong>,  wind: <strong>3.13km/h </strong> 
+        </p> 
         </div>
-                
-                <div>
-                    🌤️ 25° c
-                </div>
 
-                <br/>
+  
+        <div class="app-temperature-container">      
+        <div class="app-temperature-icon">🌤️</div>
+                <div class="app-temperature">25</div>
+                <div class="app-uni">°c</div>
+     
+            </div>     
        
-            
-          
-   
+    </div>
+       
+           
 
+    </main>
+          
     
     <footer>this is project was coded by
         <a href="https://github.com/Amina-ah" target="_blank">Amina AHMED</a> and is hosted on <a href="https://github.com/Amina-ah/weather-app" target="_blank">Github</a>
         and website hosted on <a href="https://aminaweatherapp.netlify.app/" target="_blank">Netlify</a>
         
     </footer>
-</div>
-              
-
+             
 </body>
 </html>
