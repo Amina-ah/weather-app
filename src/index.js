@@ -19,6 +19,10 @@ function refreshWeather(response) {
     let windElement = document.querySelector("#wind");
     windElement.innerHTML=wind;
 
+    let icon = `<img src="${response.data.condition.icon_url}" class="app-temperature-icon"/>`;
+    let iconElement =document.querySelector("#app-icon");
+    iconElement.innerHTML =icon;
+
     let date = new Date();
     let timeElement = document.querySelector("#date");
     timeElement.innerHTML= formatDate(date);
